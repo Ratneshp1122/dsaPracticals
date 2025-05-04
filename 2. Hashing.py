@@ -2,7 +2,7 @@ class HashTable:
 
     def __init__(self, size):
         self.dummy = -9999
-        self.a = [self.dummy] * size
+        self.a = [self.dummy] * size #[-9999,-9999,-9999]
 
     def hashFunc(self, key):
         return key % len(self.a)
