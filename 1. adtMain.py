@@ -1,4 +1,4 @@
-from 1. ADTFunctions.py import adt
+from 1. ADTFunctions.py import ADT
 
 def menu():
     print("\nMenu:")
@@ -12,7 +12,7 @@ def menu():
     print("8. Check if a set is a subset of another set")
     print("9. To display set")
     print("9. Exit")
-  set1 = setops()
+  set1 = ADT()
 while True:
     menu()
     choice = int(input("Enter your choice: "))
@@ -32,28 +32,28 @@ while True:
     elif choice == 4:
         print(f"Size of the set: {set1.size()}")
     elif choice == 5:
-        set2 = setops()
+        set2 = ADT()
         elements = input("Enter elements of the second set ").split(",")
         for elem in elements:
             set2.add(elem.strip())
         set1.union(set2)
         print(f"Union of sets: {set1.a}")
     elif choice == 6:
-        set2 = setops()
+        set2 = ADT()
         elements = input("Enter elements of the second set").split(",")
         for elem in elements:
             set2.add(elem.strip())
         set1.intersection(set2)
         print(f"Intersection of sets: {set1.a}")
     elif choice == 7:
-        set2 = setops()
+        set2 = ADT()
         elements = input("Enter elements of the second set").split(",")
         for elem in elements:
             set2.add(elem.strip())
         set1.difference(set2)
         print(f"Difference of sets: {set1.a}")
     elif choice == 8:
-        set2 = setops()
+        set2 = ADT()
         elements = input("Enter elements of the second set ").split(",")
         for elem in elements:
             set2.add(elem.strip())
