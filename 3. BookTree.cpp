@@ -32,7 +32,7 @@ public:
             root->nextChapter = newChapter;
         } else {
             Node* temp = root->nextChapter;
-            while (temp->nextChapter)
+            while (temp->nextChapter != NULL)
                 temp = temp->nextChapter;
             temp->nextChapter = newChapter;
         }
